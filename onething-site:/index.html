@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="color-scheme" content="dark" />
+
+  <title>OneThing — Ethos & Roadmap</title>
+  <meta name="description" content="OneThing helps people make meaningful change by focusing on what matters — with calm structure, useful insight, and zero noise." />
+
+  <!-- Social preview -->
+  <meta property="og:title" content="OneThing — Ethos & Roadmap" />
+  <meta property="og:description" content="Meaningful change. One focus. Calm structure. Useful insight. Zero noise." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/og.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/og.svg" type="image/svg+xml" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="OneThing home">
+      <span class="brandMark" aria-hidden="true"></span>
+      <span class="brandText">OneThing</span>
+    </a>
+
+    <nav class="nav">
+      <a href="#ethos">Ethos</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#how">How it works</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cta" id="primaryCta" type="button">Get updates</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="heroBg" aria-hidden="true"></div>
+
+      <div class="heroInner">
+        <p class="kicker">Ethos • Roadmap • Principles</p>
+
+        <h1>
+          Build change that <span class="glow">actually sticks</span>.
+        </h1>
+
+        <p class="subhead">
+          OneThing is a focused, calm system for personal progress:
+          pick what matters, show up consistently, and let your data tell a simpler story.
+        </p>
+
+        <div class="heroCard">
+          <div class="heroCardTop">
+            <div>
+              <p class="label">Your OneThing</p>
+              <p class="value" id="oneThingDisplay">Build myself back better after long-term injury.</p>
+            </div>
+
+            <button class="ghost" id="editOneThing" type="button">Edit</button>
+          </div>
+
+          <p class="hint">
+            This is the anchor. Everything else (training, metrics, notes, reflections) points back to it.
+          </p>
+
+          <div class="pillRow" aria-label="Key qualities">
+            <span class="pill">Simple</span>
+            <span class="pill">Grounded</span>
+            <span class="pill">Encouraging</span>
+            <span class="pill">No noise</span>
+          </div>
+        </div>
+
+        <div class="actions">
+          <a class="button" href="#roadmap">See the roadmap</a>
+          <a class="button secondary" href="#ethos">Read the ethos</a>
+        </div>
+
+        <p class="fineprint">
+          Not another “do everything” tracker. This is about one meaningful focus — done consistently.
+        </p>
+      </div>
+    </section>
+
+    <section id="ethos" class="section">
+      <div class="sectionHeader">
+        <h2>Ethos</h2>
+        <p>Principles that shape every feature decision.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>1) One focus beats ten intentions</h3>
+          <p>
+            Clarity creates momentum. We prioritise a single commitment you can actually carry into daily life.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>2) Consistency is the strategy</h3>
+          <p>
+            “All-or-nothing” is fragile. We design for repeatability — especially when you’re busy, tired, or interrupted.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>3) Calm is a feature</h3>
+          <p>
+            No guilt loops. No noisy dashboards. The interface should feel like a steady coach, not a judgemental scorecard.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>4) Data should reduce confusion</h3>
+          <p>
+            We use metrics (training, health, routines) to explain patterns — not to overwhelm you with charts you’ll ignore.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>5) Your agency comes first</h3>
+          <p>
+            Suggestions are optional. You stay in control of goals, meaning, and direction. The app supports — it doesn’t decide.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>6) Privacy by default</h3>
+          <p>
+            Personal progress is personal. We minimise data collection and aim to keep user data on-device / in their own iCloud where possible.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section">
+      <div class="sectionHeader">
+        <h2>Roadmap</h2>
+        <p>Transparent, flexible, and realistic. Dates only when we’re sure.</p>
+      </div>
+
+      <div class="columns">
+        <div class="roadCol">
+          <div class="roadHead">
+            <h3>Now</h3>
+            <p>Foundations</p>
+          </div>
+          <ul class="list">
+            <li>Polished home view: “Where you are now” without noise</li>
+            <li>OneThing editor (the anchor statement)</li>
+            <li>Core tracking: consistency, streaks, simple trends</li>
+            <li>Export / backup safety checks</li>
+          </ul>
+        </div>
+
+        <div class="roadCol">
+          <div class="roadHead">
+            <h3>Next</h3>
+            <p>Useful insight</p>
+          </div>
+          <ul class="list">
+            <li>Contextual reflections: “what happened & why it matters”</li>
+            <li>Weekly summary: wins, misses, patterns, one recommendation</li>
+            <li>Health integrations where they genuinely help (e.g. steps, workouts)</li>
+            <li>Better onboarding: goals framed as inspiring-but-achievable</li>
+          </ul>
+        </div>
+
+        <div class="roadCol">
+          <div class="roadHead">
+            <h3>Later</h3>
+            <p>Depth (only if it stays simple)</p>
+          </div>
+          <ul class="list">
+            <li>Smarter “coach” commentary that references your OneThing</li>
+            <li>Optional challenges / programs (time-boxed, realistic)</li>
+            <li>Custom dashboards that still feel calm</li>
+            <li>Community features only if they improve accountability without noise</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="note">
+        <p><strong>Roadmap philosophy:</strong> we build only what strengthens focus and consistency. If a feature adds noise, it doesn’t ship.</p>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <div class="sectionHeader">
+        <h2>How it works</h2>
+        <p>A simple loop you can repeat.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <span class="stepNum">01</span>
+          <h3>Choose the OneThing</h3>
+          <p>Write a short statement that matters and feels achievable.</p>
+        </div>
+        <div class="step">
+          <span class="stepNum">02</span>
+          <h3>Show up consistently</h3>
+          <p>Track the essentials. Small actions done often beat big actions done rarely.</p>
+        </div>
+        <div class="step">
+          <span class="stepNum">03</span>
+          <h3>Review weekly</h3>
+          <p>Spot patterns. Keep what works. Remove friction. Repeat.</p>
+        </div>
+      </div>
+
+      <div class="quote">
+        <p>
+          “The point isn’t to record everything. The point is to keep moving in the direction you chose.”
+        </p>
+      </div>
+    </section>
+
+    <section id="privacy" class="section">
+      <div class="sectionHeader">
+        <h2>Privacy & data</h2>
+        <p>Clear, minimal, and user-first.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>What we aim for</h3>
+          <ul class="list">
+            <li>Collect the minimum needed to make the product work.</li>
+            <li>Prefer on-device storage and user-controlled sync (e.g. iCloud) where possible.</li>
+            <li>No selling of personal data. No creepy tracking.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>What this page is (and isn’t)</h3>
+          <p>
+            This is an ethos statement, not a legal privacy policy. When you ship publicly, you should publish a full privacy policy
+            tailored to the actual data flows in the app.
+          </p>
+          <p class="muted">
+            If you want, paste your real app data flows here later and I’ll turn them into a proper policy draft.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="sectionHeader">
+        <h2>Contact</h2>
+        <p>Get in touch, follow along, or join early access.</p>
+      </div>
+
+      <div class="contactCard">
+        <div class="contactRow">
+          <div>
+            <p class="label">Email</p>
+            <p class="value"><a id="emailLink" href="#">hello@yourdomain.com</a></p>
+          </div>
+          <button class="ghost" id="copyEmail" type="button">Copy</button>
+        </div>
+
+        <div class="contactRow">
+          <div>
+            <p class="label">Social</p>
+            <p class="value"><a href="#" id="socialLink" target="_blank" rel="noreferrer">Instagram</a></p>
+          </div>
+          <a class="ghostLink" href="#top">Back to top</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <p class="tiny">
+          © <span id="year"></span> OneThing. Built with focus.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal -->
+  <dialog id="oneThingDialog" class="dialog">
+    <form method="dialog" class="dialogInner">
+      <h3>Edit your OneThing</h3>
+      <p class="muted">Keep it short. Make it meaningful. Make it achievable.</p>
+      <label class="inputLabel" for="oneThingInput">OneThing statement</label>
+      <input id="oneThingInput" class="input" type="text" maxlength="120" autocomplete="off"
+             placeholder="e.g. Give the best possible account of myself in the London Marathon." />
+      <div class="dialogActions">
+        <button class="button secondary" value="cancel">Cancel</button>
+        <button class="button" id="saveOneThing" value="default">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
