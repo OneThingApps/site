@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="color-scheme" content="dark" />
+  <meta name="color-scheme" content="light" />
+
   <title>OneThing — Health (Coming soon)</title>
-  <meta name="description" content="OneThing — Health: a calm home for training, recovery, and insight — without overwhelm." />
+  <meta name="description" content="OneThing — Health is coming soon: a calm home for training, recovery and insight — without overwhelm." />
+
   <link rel="stylesheet" href="/styles.css" />
 </head>
 
@@ -19,11 +21,11 @@
     <nav class="nav">
       <a href="/">Home</a>
       <a href="/habit/">Habit</a>
-      <a href="/#roadmap">Roadmap</a>
+      <a href="/#ethos">Ethos</a>
       <a href="/#contact">Contact</a>
     </nav>
 
-    <a class="cta" href="/#apps" role="button">All apps</a>
+    <a class="cta" href="mailto:hello@onethingapps.com?subject=OneThing%20Health%20updates" role="button">Get updates</a>
   </header>
 
   <main id="top">
@@ -32,28 +34,81 @@
 
       <div class="heroInner">
         <p class="kicker">App • Coming soon</p>
+
         <h1>OneThing — <span class="glow">Health</span></h1>
+
         <p class="subhead">
           A calm, focused home for your health journey — anchored to your OneThing.
-          Training, recovery and insight without the overwhelm.
+          Training, recovery, and insight without overwhelm.
         </p>
 
         <div class="heroCard">
-          <p class="label">Status</p>
-          <p class="value">Coming soon</p>
+          <div class="metaRow" style="margin-bottom:10px;">
+            <span class="status pill subtle">Coming soon</span>
+            <span class="muted">In development</span>
+          </div>
+
           <p class="hint">
             We’ll share more when the foundations feel right: clarity first, then features.
+            The goal is usefulness without noise.
           </p>
+
+          <div class="actions" style="margin-top:14px;">
+            <a class="button" href="mailto:hello@onethingapps.com?subject=OneThing%20Health%20updates">Get updates</a>
+            <a class="button secondary" href="/#ethos">Company ethos</a>
+          </div>
         </div>
 
-        <div class="actions">
-          <a class="button" href="mailto:hello@onethingapps.com?subject=OneThing%20Health%20early%20access">Join updates</a>
-          <a class="button secondary" href="/#ethos">Company ethos</a>
+        <p class="fineprint">
+          Next: define the first version clearly, then add screenshots and a waitlist if needed.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sectionHeader">
+        <h2>What it will be</h2>
+        <p>A simple idea: your data should reduce confusion, not create it.</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <h3>Calm “home” screen</h3>
+          <p>Your current focus, your recent training/health signals, and one helpful reflection — no clutter.</p>
+        </article>
+        <article class="card">
+          <h3>Context anchored to your OneThing</h3>
+          <p>Insights make sense only in context: your goal, your constraints, your life.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sectionHeader">
+        <h2>Contact</h2>
+        <p>Interest, feedback, early access.</p>
+      </div>
+
+      <div class="contactCard">
+        <div class="contactRow">
+          <div>
+            <p class="label">Email</p>
+            <p class="value">
+              <a href="mailto:hello@onethingapps.com?subject=OneThing%20Health%20updates">hello@onethingapps.com</a>
+            </p>
+          </div>
+          <a class="ghostLink" href="/">Back to OneThing</a>
         </div>
 
-        <p class="fineprint">Next: define the first version clearly, then add screenshots and a waitlist.</p>
+        <div class="divider"></div>
+
+        <p class="tiny">© <span id="year"></span> OneThing.</p>
       </div>
     </section>
   </main>
+
+  <script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+  </script>
 </body>
 </html>
