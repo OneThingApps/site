@@ -1,5 +1,4 @@
 :root{
-  /* Calm palette: soft ink + mist + gentle gradient hints */
   --bg: #f7f7fb;
   --bg2:#fbfbfe;
   --card: rgba(255,255,255,.70);
@@ -7,10 +6,9 @@
   --muted:#5e6a86;
   --line: rgba(24,32,51,.10);
 
-  /* Logo-ish gradient accents (lavender/blue/peach) */
-  --accentA: rgba(140, 130, 210, .35);  /* lavender */
-  --accentB: rgba(120, 170, 210, .30);  /* soft blue */
-  --accentC: rgba(245, 185, 155, .30);  /* peach */
+  --accentA: rgba(140, 130, 210, .35);
+  --accentB: rgba(120, 170, 210, .30);
+  --accentC: rgba(245, 185, 155, .30);
 
   --shadow: 0 18px 60px rgba(16, 20, 35, .10);
   --shadow2: 0 10px 30px rgba(16, 20, 35, .08);
@@ -136,7 +134,6 @@ h1{
   letter-spacing: -0.02em;
 }
 .glow{
-  /* subtle “glow” without neon */
   text-shadow: 0 10px 30px rgba(140,130,210,.18);
 }
 
@@ -249,12 +246,18 @@ h1{
 .card h3{ margin:0 0 8px; font-size: 16px; }
 .card p{ margin:0; color: rgba(24,32,51,.78); line-height: 1.6; }
 
+/* ✅ FIX: status row no longer overlaps on mobile */
 .metaRow{
   display:flex;
+  flex-wrap: wrap;
   gap:10px;
   align-items:center;
   margin-top: 12px;
 }
+.metaRow > *{
+  white-space: nowrap;
+}
+
 .pill{
   border: 1px solid rgba(24,32,51,.12);
   background: rgba(255,255,255,.70);
