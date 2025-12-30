@@ -191,11 +191,12 @@ h1{
   margin:0;
   font-size: 26px;
   letter-spacing: -.01em;
+  font-weight: 700; /* calmer */
 }
 .sectionHeader p{
   margin: 8px 0 0;
   color: rgba(95,107,134,.95);
-  max-width: 86ch;
+  max-width: 60ch; /* calmer line length */
 }
 
 .grid{
@@ -225,6 +226,7 @@ h1{
   gap: 8px 10px;
   margin-top: 12px;
 }
+
 .pill{
   border: 1px solid rgba(24,32,51,.12);
   background: rgba(255,255,255,.80);
@@ -243,16 +245,42 @@ h1{
   color: rgba(95,107,134,.98);
   font-size: 14px;
   line-height: 1.2;
-  /* allow wrapping instead of collision */
   min-width: 0;
   flex: 1 1 auto;
 }
 
+/* ✅ More breathing room between status and CTA */
+.metaRow--soft{
+  margin-bottom: 18px;
+}
 .cardActions{
   margin-top: 14px;
   display:flex;
   gap:10px;
   flex-wrap:wrap;
+}
+.cardActions--spaced{
+  margin-top: 0;
+}
+
+/* Lists (used on other pages) */
+.list{
+  margin: 12px 0 0;
+  padding-left: 18px;
+  color: rgba(24,32,51,.82);
+  line-height: 1.6;
+}
+.list li{ margin: 8px 0; }
+
+.note{
+  max-width: var(--max);
+  margin: 14px auto 0;
+  padding: 14px 16px;
+  border-radius: var(--r);
+  border: 1px solid rgba(24,32,51,.10);
+  background: rgba(255,255,255,.62);
+  color: rgba(24,32,51,.78);
+  box-shadow: var(--shadow2);
 }
 
 .contactCard{
