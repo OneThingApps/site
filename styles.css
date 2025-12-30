@@ -63,11 +63,28 @@ a:hover{ text-decoration: underline; text-underline-offset: 4px; }
   min-width: 0;
 }
 .brandMark{
-  width: 30px; height: 30px;
+  position: relative;
+  width: 30px;
+  height: 30px;
   border-radius: 11px;
-  background: linear-gradient(135deg, rgba(160,150,220,.92), rgba(245,195,170,.86));
-  box-shadow: 0 0 0 6px rgba(160,150,220,.09);
+  background: linear-gradient(
+    135deg,
+    rgba(160,150,220,.95),
+    rgba(245,195,170,.90)
+  );
+  box-shadow: 0 0 0 6px rgba(160,150,220,.10);
   flex: 0 0 auto;
+  overflow: hidden;
+}
+.brandLogo{
+  position: absolute;
+  inset: 0;
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  object-fit: contain;
+  opacity: 0.92;        /* keeps it calm */
+  pointer-events: none;
 }
 .brandText{
   font-weight: 750;
